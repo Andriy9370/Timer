@@ -1,6 +1,6 @@
 import { Component, OnDestroy, AfterViewInit } from '@angular/core';
-import { Subscription, timer, Subject, Observable } from 'rxjs';
-import { debounceTime, timeInterval } from 'rxjs/operators';
+import { Subscription, timer, Subject } from 'rxjs';
+import { timeInterval } from 'rxjs/operators';
 
 @Component({
   selector: 'app-timer',
