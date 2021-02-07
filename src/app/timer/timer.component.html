@@ -1,0 +1,13 @@
+<div class="container">
+  <section class="timer-label">
+    <ng-container>
+      {{hoursDisplay}}:{{minutesDisplay}}:{{secondsDisplay}}
+    </ng-container>
+  </section>
+  <section class="timer-button-container">
+    <button class="timer-button" (click)="toogleTimer()">{{ startText }}</button>
+    <button [disabled]="waitting || !running ? 'disabled': null" (click)="waitTimer()" class="timer-button">Wait
+    </button>
+    <button [disabled]="resetDisabled ? 'disabled': null" (click)="resetTimer()" class="timer-button">Reset</button>
+  </section>
+</div>
